@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exercício 5 - Formulário</title>
+    </head>
+    <body>
+        <form action="http://www.example.com/login.php">
+            <p>Usuário: 
+                <input type="text" name="usuario" size="15" maxlength="30" />
+            </p>
+            <p>Senha:
+                <input type="password" name="senha" size="15" maxlength="30" />
+            </p>
+            <hr>
+            <p>Comente aqui como você está passando essa quarentena:</p>
+            <textarea name="coments" cols="20" rows="4">Comente...</textarea>
+            <hr>
+            <p>Selecione seu sexo:
+                <br>
+                <input type="radio" name="sexo" value="masculino"/> Masculino
+                <input type="radio" name="sexo" value="feminino"/> Feminino
+                <input type="radio" name="sexo" value="naodeclarado"/> Prefiro não declarar
+            </p> 
+            <hr> 
+            <p>Selecione a(s) opção(s) que mais te descreve(m) nesta quarentena:
+                <br>
+                <input type="checkbox" name="caracteristica" value="preguicoso"/> Preguiçoso
+                <input type="checkbox" name="caracteristica" value="triste"/> Triste
+                <input type="checkbox" name="caracteristica" value="produtivo"/> Produtivo
+                <input type="checkbox" name="caracteristica" value="desanimado"/> Desanimado
+                <input type="checkbox" name="caracteristica" value="tranquilo"/> Tranquilo
+            </p>
+            <hr>
+            <p>Quantas pessoas estão de quarentena junto com você?</p>
+            <select name="numpessoas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <hr>
+            <p>Queremos ver como você está nesse momento. Faça o upload de uma foto sua na quarentena.</p>
+            <input type="file" name="fotoquarentena"/><br>
+            <input type="submit" value="Upload"/>
+            <hr>
+            <p>Agora você pode inserir seu nome para receber nossos podcasts semanais:</p>
+            <input type="text" name="email"/>
+            <input type="submit" name="incricao" value="Inscreva-se"/>
+            <hr>
+            <p>O que você deseja ver por aqui?</p>
+            <input type="search" name="pesquisa" placeholder="Enter"/>
+            <input type="submit" value="Pesquisar"/>
+            <br><br>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome:<br><input type="text" name="nome"/></label><br>
+                <label>Email:<br><input type="email" name="email"/></label><br>
+                <label>Telefone:<br><input type="text" name="telefone"/></label><br>
+                <label>Data de nascimento:<br><input type="date" name="datanascimento"/></label><br>
+                <label>Idade:<br><input type="number" name="idade"/></label>
+            </fieldset>
+        </form>
+    </body>
+</html>
